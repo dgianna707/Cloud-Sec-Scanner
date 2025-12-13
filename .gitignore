@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# VS Code
+.vscode/
+
+# Reports output
+reports/*.json
+reports/*.md
+
+# OS files
+.DS_Store
