@@ -4,10 +4,19 @@ A cloud-aware API and web application security scanner for identifying security
 misconfigurations and common vulnerabilities in internet-facing services.
 
 ## Overview
-This project focuses on analyzing publicly accessible web applications and APIs
-to identify security issues such as missing protections, insecure configurations,
-and potential vulnerability indicators. The scanner is designed to provide clear,
-structured findings with severity ratings and remediation guidance.
+This project implements a modular security scanner designed to analyze
+internet-facing web applications and APIs for common misconfigurations
+and vulnerability indicators.
+
+The scanner sends HTTP requests to a target service and evaluates the
+responses for security signals such as missing protections, insecure
+transport configurations, and exposed application behavior. Findings are
+structured with severity classifications and remediation guidance to
+mirror how real security tools report risk.
+
+The goal of this project is to better understand how application security
+tools operate at the HTTP layer while building a maintainable and
+extensible scanning architecture.
 
 ## Current Features
 - Structured security findings with severity classification
@@ -17,6 +26,7 @@ structured findings with severity ratings and remediation guidance.
 ## Planned Features
 - HTTPS enforcement and redirect analysis
 - Security header inspection
+- Infrastructure fingerprinting (CDN / reverse proxy detection)
 - API endpoint and input surface discovery
 - Reflected input analysis (potential XSS indicators)
 - Injection risk pattern detection (SQL injection indicators)
@@ -25,7 +35,7 @@ structured findings with severity ratings and remediation guidance.
 - Severity-based finding aggregation
 - Professional report generation (JSON / Markdown)
 - Automated execution in CI environments
-
+- Banner grabbing using socket programming
 
 ## Tech Stack
 - Python
@@ -34,5 +44,4 @@ structured findings with severity ratings and remediation guidance.
 - GitHub Actions (planned)
 
 ## Disclaimer
-This tool is intended for educational and defensive security testing on systems you own
-or have explicit permission to test.
+This tool is intended for educational purposes only.

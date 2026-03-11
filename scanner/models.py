@@ -19,5 +19,5 @@ class ScanResult:
     """
     target: str              # URL we scanned
     findings: List[Finding]  # List of all findings
-    overall_risk: str        # Summary: "LOW", "HIGH", etc.
-
+    overall_risk: str        # Summary: "LOW", "HIGH"
+    
