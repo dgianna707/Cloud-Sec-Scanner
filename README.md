@@ -5,7 +5,7 @@ misconfigurations and common vulnerabilities in internet-facing services.
 
 ## Overview
 This project implements a modular security scanner designed to analyze
-internet-facing web applications and APIs for common misconfigurations
+internet-facing web applications for common misconfigurations
 and vulnerability indicators.
 
 The scanner sends HTTP requests to a target service and evaluates the
