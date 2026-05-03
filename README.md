@@ -1,6 +1,6 @@
-# Cloud Security Scanner
+# Web Application Security Scanner 
 
-A cloud-aware API and web application security scanner for identifying security
+An automated web application security scanner for identifying security
 misconfigurations and common vulnerabilities in internet-facing services.
 
 ## Overview
@@ -15,16 +15,16 @@ structured with severity classifications and remediation guidance to
 mirror how real security tools report risk.
 
 The goal of this project is to better understand how application security
-tools operate at the HTTP layer while building a maintainable and
-extensible scanning architecture.
+tools operate at the application layer while building a maintainable and
+extensible scanning architecture, building to map vulnerability indicators to the OWASP TOP 10.
 
 ## Current Features
 - Structured security findings with severity classification
 - Modular scanner architecture
-- Support for scanning cloud-deployed, internet-exposed services
+- HTTPS enforcement and redirect analysis
+
 
 ## Planned Features
-- HTTPS enforcement and redirect analysis
 - Security header inspection
 - Infrastructure fingerprinting (CDN / reverse proxy detection)
 - API endpoint and input surface discovery
